@@ -1,11 +1,12 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-  </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <div id="app"></div>
+    <script type="text/javascript">
+      const app = document.getElementById('app');
+      const header = document.createElement('h1');
+      const headerContent = document.createTextNode('Develop, Preview, Ship!');
+      header.appendChild(headerContent);
+      app.appendChild(header);
+    </script>
   </body>
 </html>
